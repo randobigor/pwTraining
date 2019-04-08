@@ -7,7 +7,6 @@ import { StoreDataService } from '../store-data.service';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent implements OnInit {
-  
   constructor(private transfer : StoreDataService) {}
 
   ngOnInit() {
