@@ -1,0 +1,17 @@
+<div class="container text-center">
+    <input 
+      type="text" 
+      class="form-control mt-5 mb-2" 
+      placeholder="X" 
+      #inputX 
+      (focusout) = "getX(inputX.value)">
+
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Y" 
+      #inputY 
+      (focusout) = "getY(inputY.value)">
+
+    <button class="btn btn-info mt-2" (click)="getSum()">TRANSLATE</button>
+</div>
