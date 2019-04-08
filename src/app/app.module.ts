@@ -7,18 +7,23 @@ import { InputComponent } from './input/input.component';
 import { OutputComponent } from './output/output.component';
 import { NgbButtonsModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
+import { ResultsComponent } from './results/results.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
     OutputComponent,
-    HomeComponent
+    HomeComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbButtonsModule
+    NgbButtonsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

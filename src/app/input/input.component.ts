@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StoreDataService } from '../store-data.service';
 
 @Component({
   selector: 'app-input',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent implements OnInit {
+  
+  constructor(private transfer : StoreDataService) {}
+
+  ngOnInit() {
+  }
 
   x : number;
   y : number;
@@ -19,12 +25,6 @@ export class InputComponent implements OnInit {
   }
 
   getSum(){
-    console.log(Number(this.x + this.y))
+    this.transfer.setData(this.x + this.y);
   }
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

@@ -1,7 +1,7 @@
-<div class="container text-center">
+<div class="container text-center mt-2">
   <form>
     <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model">
-      <label ngbButtonLabel class="btn-primary" routerLink="/home">
+      <label ngbButtonLabel class="btn-primary" routerLink="/">
         <input ngbButton type="radio"> Home
       </label>
       <label ngbButtonLabel class="btn-primary">
@@ -9,6 +9,9 @@
       </label>
       <label ngbButtonLabel class="btn-primary">
         <input ngbButton type="radio"  routerLink="/output"> Output
+      </label>
+      <label ngbButtonLabel class="btn-primary">
+        <input ngbButton type="radio"  routerLink="/results"> Results
       </label>
     </div>
   </form>

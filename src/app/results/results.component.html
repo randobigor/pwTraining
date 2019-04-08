@@ -1,0 +1,16 @@
+<div class="container">
+  <table class="table table-striped text-center mt-5">
+    <thead>
+      <tr>
+        <th scope="col">Values of X</th>
+        <th scope="col">Values of Y</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let value of values">
+        <td>{{ value.x }}</td>
+        <td>{{ value.y }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
