@@ -9,6 +9,7 @@ import { NgbButtonsModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { ResultsComponent } from './results/results.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     InputComponent,
     OutputComponent,
     HomeComponent,
-    ResultsComponent
+    ResultsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

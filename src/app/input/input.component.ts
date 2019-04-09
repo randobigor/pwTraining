@@ -12,18 +12,7 @@ export class InputComponent implements OnInit {
   ngOnInit() {
   }
 
-  x : number;
-  y : number;
-
-  getX(x){
-    this.x = parseInt(x);
-  }
-
-  getY(y){
-    this.y = parseInt(y);
-  }
-
-  getSum(){
-    this.transfer.setData(this.x + this.y);
+  getSum(x, y){
+    this.transfer.setData(parseInt(x) + parseInt(y));
   }
 }
