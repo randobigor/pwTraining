@@ -12,7 +12,7 @@ export class OutputComponent implements OnInit {
   constructor(private storedData: StoreDataService) {}
 
   ngOnInit() {
-    this.data = this.storedData.getData() || '';
+    this.data = this.storedData.getData() || this.data;
   }
 
 }
