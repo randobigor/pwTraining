@@ -7,9 +7,9 @@ import { DatabaseService } from '../database.service';
   styleUrls: ['./results.component.css']
 })
 export class ResultsComponent implements OnInit {
-  values : any = [];
+  values: any = [];
 
-  constructor(private dataService : DatabaseService) {}
+  constructor(private dataService: DatabaseService) {}
 
   ngOnInit() {
     this.dataService.getValues().subscribe(data => this.values = data);

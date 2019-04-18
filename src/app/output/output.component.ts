@@ -7,16 +7,12 @@ import { StoreDataService } from '../store-data.service';
   styleUrls: ['./output.component.css']
 })
 export class OutputComponent implements OnInit {
-  private data : any = "Тут пока ничего нет :/";
+  data = 'Тут пока ничего нет :/';
 
-  constructor(private storedData : StoreDataService) { 
-    
-   }
+  constructor(private storedData: StoreDataService) {}
 
   ngOnInit() {
-    if(this.storedData.getData() != undefined){
-      this.data = this.storedData.getData();
-    }
+    this.data = this.storedData.getData() || '';
   }
 
 }

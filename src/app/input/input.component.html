@@ -3,14 +3,15 @@
       type="number" 
       class="form-control mt-5 mb-2" 
       placeholder="X" 
-      #inputX 
-      >
+      [(ngModel)]="inputX"
+    />
 
     <input 
       type="number" 
       class="form-control" 
-      placeholder="Y" 
-      #inputY >
+      placeholder="Y"
+      [(ngModel)]="inputY"
+    />
 
-    <button class="btn btn-info mt-2" (click)="getSum(inputX.value, inputY.value)">TRANSLATE</button>
+    <button class="btn btn-info mt-2" (click)="getSum()">TRANSLATE</button>
 </div>

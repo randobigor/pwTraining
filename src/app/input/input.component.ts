@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { StoreDataService } from '../store-data.service';
 
 @Component({
@@ -6,13 +6,13 @@ import { StoreDataService } from '../store-data.service';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css']
 })
-export class InputComponent implements OnInit {
-  constructor(private transfer : StoreDataService) {}
+export class InputComponent{
+  inputX = '';
+  inputY = '';
 
-  ngOnInit() {
-  }
+  constructor(private transfer: StoreDataService) {}
 
-  getSum(x, y){
-    this.transfer.setData(parseInt(x) + parseInt(y));
+  getSum() {
+    this.transfer.setData(parseFloat(this.inputX) + parseFloat(this.inputY));
   }
 }
